@@ -19,7 +19,7 @@
     },
     {
       "FullName": "Unity.Barracuda.BurstBLAS, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2023-06-06T22:03:56.0868079Z"
+      "LastWriteTime": "2023-11-06T16:13:22.6145976Z"
     },
     {
       "FullName": "mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -27,7 +27,7 @@
     },
     {
       "FullName": "Unity.Barracuda, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2023-06-06T22:03:55.7029293Z"
+      "LastWriteTime": "2023-11-06T16:13:22.3858048Z"
     }
   ],
   "Functions": [
@@ -56,7 +56,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Unity.Barracuda.UnsafeMatrixBlockMultiplyUnrolled8xhJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "27d17f80ab6f90cbdfc065ce542b7e76",
+      "ModuleHash": "c9bf0227ba44bef782e8d09675d001da",
       "LinkName": "C1C6C1D457935913",
       "AssemblyDependencyIndices": [
         3,
