@@ -1,0 +1,3 @@
+Unity Hub üzerinden,Unity 2020.1.10f1
+Sürümü yüklendikten sonra zipten çıkardıktan sonra 
+Projenin Directory'i sini Unity Hub'ta açarak projeyi çalıştırabilirsiniz

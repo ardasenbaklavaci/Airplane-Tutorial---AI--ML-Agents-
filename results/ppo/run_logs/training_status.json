@@ -1,0 +1,29 @@
+{
+    "AircraftLearner": {
+        "checkpoints": [
+            {
+                "steps": 499976,
+                "file_path": "results\\ppo\\AircraftLearner\\AircraftLearner-499976.nn",
+                "reward": -0.6198967851458057,
+                "creation_time": 1685565592.9344819
+            },
+            {
+                "steps": 500032,
+                "file_path": "results\\ppo\\AircraftLearner\\AircraftLearner-500032.nn",
+                "reward": -0.6199000105261803,
+                "creation_time": 1685565593.2347524
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500032,
+            "file_path": "results\\ppo\\AircraftLearner.nn",
+            "reward": -0.6199000105261803,
+            "creation_time": 1685565593.2347524
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.12.0"
+    }
+}

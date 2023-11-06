@@ -1,0 +1,15 @@
+// kurulum adımları :
+python -m venv venv               // venv yi kur
+pip install -Iv mlagents==0.20.0         // mlagents 0.20.0 versiyonuna özel venv yi kurar
+pip install -Iv mlagents==0.21.0 numpy==1.15.*        // mlagents 0.20.0 ve numpy versiyonuna özel venv yi kurar
+// venv yi açma:  
+venv\Scripts\activate 			// venv arayüzünü açar 
+mlagents-learn 			// düz learn , default results klasörüne sonuçları ve ürettiği config dosyasını sonuç olarak atar.
+mlagents-learn config\trainer_config.yaml --train --run-id=custom-track-1 // config ve custom run id ile learn
+
+pip install -Iv mlagents==0.20.0 protobuf==3.20.* numpy==1.23.0 
+pip install protobuf==3.20.*
+
+mlagents-learn --train --run-id=cu
+
+pip install D:\Unity\torch-1.7.0+cu110-cp38-cp38-win_amd64.whl

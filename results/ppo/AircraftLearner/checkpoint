@@ -1,0 +1,3 @@
+model_checkpoint_path: "AircraftLearner-500032.ckpt"
+all_model_checkpoint_paths: "AircraftLearner-499976.ckpt"
+all_model_checkpoint_paths: "AircraftLearner-500032.ckpt"

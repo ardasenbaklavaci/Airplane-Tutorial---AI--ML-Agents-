@@ -1,0 +1,67 @@
+behaviors:
+    AircraftLearner:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   2048
+          buffer_size:  20480
+          learning_rate:        0.0003
+          learning_rate_schedule:       linear
+        network_settings:
+          normalize:    False
+          hidden_units: 256
+          num_layers:   2
+          memory:
+            sequence_length:    64
+            memory_size:        128
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      50000000
+        time_horizon:   120
+        summary_freq:   10000
+        threaded:       True
+        framework:      tensorflow
+environment_parameters:
+    checkpoint_radius:
+        curriculum:
+            - name: First
+              completion_criteria:
+                measure: reward
+                behavior: AircraftLearner
+                thresholds: 2.0
+                min_lesson_length: 100
+                signal_smoothing: true
+              value: 50.0
+
+            - name: Second
+              completion_criteria:
+                measure: reward
+                behavior: AircraftLearner
+                thresholds: 2.0
+                min_lesson_length: 100
+                signal_smoothing: true
+              value: 30.0
+
+            - name: Third
+              completion_criteria:
+                measure: reward
+                behavior: AircraftLearner
+                thresholds: 4.0
+                min_lesson_length: 200
+                signal_smoothing: true
+              value: 20.0
+
+            - name: Fourth
+              completion_criteria:
+                measure: reward
+                behavior: AircraftLearner
+                thresholds: 6.0
+                min_lesson_length: 200
+                signal_smoothing: true
+              value: 10.0
+
+            - name: Last
+              value: 0.0
